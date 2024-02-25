@@ -1,6 +1,7 @@
 import { sidenavLinks } from '@/constants'
 import React from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { UserNav } from './user-nav';
 
 const TopNav = () => {
     const { pathname } = useLocation();
@@ -41,7 +42,7 @@ const TopNav = () => {
                 </div>
 
                 <div>
-                    
+                    <UserNav />
                 </div>
             </div>
         </section>
