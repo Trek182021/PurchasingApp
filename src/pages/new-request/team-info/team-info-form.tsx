@@ -120,7 +120,7 @@ const TeamInfoForm = ({ isStatic = false}: { isStatic?: boolean }) => {
       //     />
       //   </form>
       // </Form>
-      <div className="flex flex-col lg:max-w-xl my-6 gap-6">
+      <div className="flex flex-col lg:max-w-2xl my-6 gap-6">
         <div className="grid w-full items-center gap-3">
             <Label htmlFor="team_name">Team Name</Label>
             <Input type="text" id="team_name" placeholder="CSE-108" disabled={isStatic}/>
