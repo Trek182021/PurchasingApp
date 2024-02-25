@@ -1,4 +1,4 @@
-export type requestStepsType = {
+export type stepsType = {
     title: string;
     path: string;
     description: string;

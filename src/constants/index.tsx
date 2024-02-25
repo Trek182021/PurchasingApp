@@ -1,4 +1,4 @@
-import { requestStepsType } from "@/lib/types"
+import { stepsType } from "@/lib/types"
 import ItemsForm from "@/pages/new-request/items/items-form"
 import ReviewForm from "@/pages/new-request/review/review-form"
 import TeamInfoForm from "@/pages/new-request/team-info/team-info-form"
@@ -26,7 +26,7 @@ export const sidenavLinks = [
     },
 ]
 
-export const requestSteps: requestStepsType[] = [
+export const requestSteps: stepsType[] = [
     {
         title: "Team Information",
         path: "/new",
