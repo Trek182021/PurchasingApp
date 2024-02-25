@@ -1,4 +1,4 @@
-import { Item } from "../data-table/columns";
+import { Item } from "../data-table/columns/items-columns";
 
 export let sampleItems1: Item[] = [
     {

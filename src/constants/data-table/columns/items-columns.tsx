@@ -10,18 +10,7 @@ import {
 import { Trash2, Pencil } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { MoreHorizontal } from "lucide-react";
-
-export type Item = {
-    id: string
-    item_description: string;
-    quantity: number;
-    unit_price: number;
-    total_amount: number;
-    vendor: string;
-    url: string;
-    comment: string;
-    has_file: boolean;
-}
+import { Item } from "@/lib/types";
 
 export const columns: ColumnDef<Item>[] = [
     {
