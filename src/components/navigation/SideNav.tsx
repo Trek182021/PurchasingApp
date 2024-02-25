@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { sidenavLinks } from '../constants'
-import { Button } from './ui/button'
+import { sidenavLinks } from '../../constants'
+import { Button } from '../ui/button'
 
 const SideNav = () => {
   const { pathname } = useLocation();

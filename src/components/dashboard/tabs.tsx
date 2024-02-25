@@ -10,7 +10,7 @@ import OverviewTab from "./tabs/overview"
 
 const DashboardTabs = () => {
   return (
-    <Tabs defaultValue="overview" className="w-[400px]">
+    <Tabs defaultValue="overview">
         <TabsList>
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="notifications">Notifications</TabsTrigger>

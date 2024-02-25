@@ -1,8 +1,13 @@
-import React from 'react'
+
+import Analytics from "../cards/analytics"
+import LatestRequests from "../cards/latest-requests"
 
 const OverviewTab = () => {
   return (
-    <div>overview</div>
+    <div className="flex flex-col gap-6">
+      <Analytics/>
+      <LatestRequests/>
+    </div>
   )
 }
 

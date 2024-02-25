@@ -3,6 +3,7 @@ import V1Layout from './pages/V1Layout'
 import "./index.css"
 import NewRequestPage from './pages/new-request/Page'
 import DashboardPage from './pages/dashboard/Page'
+import RequestsPage from './pages/all-requests/Page'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Route path="/" element={<DashboardPage />} />
                 <Route path="/new" element={<NewRequestPage />} />
                 <Route path="/new/:step" element={<NewRequestPage />} />
+                <Route path="/requests" element={<RequestsPage />} />
             </Route>
         </Routes>
 

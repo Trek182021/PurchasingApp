@@ -6,7 +6,7 @@ import { sampleItems1 } from "@/constants/fake-data/request-item"
 const ItemsForm = ({ isStatic = false }: { isStatic?: boolean }) => {
  
   return (
-    <div className="container mx-auto py-6">
+    <div className="container py-6">
       <DataTable columns={columns} data={sampleItems1} isStatic={isStatic}/>
     </div>
   )

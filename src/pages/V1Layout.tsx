@@ -1,10 +1,12 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
-import SideNav from '../components/SideNav'
+import SideNav from '../components/navigation/SideNav'
+import TopNav from '@/components/navigation/TopNav'
 
 const V1Layout = () => {
   return (
-    <div className="w-full md:flex">
+    <div className="w-full lg:flex">
+        <TopNav/>
         <SideNav />
         
         <section className="flex flex-1 h-full">
