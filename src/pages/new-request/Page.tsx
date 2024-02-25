@@ -1,5 +1,5 @@
 import Wizard from '@/components/wizard'
-import { requestSteps } from '@/constants'
+import { requestSteps } from '@/constants/wizard/requestSteps'
 import { Separator } from '@/components/ui/separator';
 
 

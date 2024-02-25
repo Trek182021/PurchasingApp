@@ -1,7 +1,3 @@
-import { stepsType } from "@/lib/types"
-import ItemsForm from "@/pages/new-request/items/items-form"
-import ReviewForm from "@/pages/new-request/review/review-form"
-import TeamInfoForm from "@/pages/new-request/team-info/team-info-form"
 
 export const sidenavLinks = [
     {
@@ -24,25 +20,4 @@ export const sidenavLinks = [
         route: '/new',
         name: 'Create New Request',
     },
-]
-
-export const requestSteps: stepsType[] = [
-    {
-        title: "Team Information",
-        path: "/new",
-        description: "Please provide the contact information of the reponsible team member.",
-        component: <TeamInfoForm />,
-    },
-    {
-        title: "Items",
-        path: "/new/items",
-        description: "Please don't forget to attach all necessary documents and information.",
-        component: <ItemsForm />,
-    },
-    {
-        title: "Review",
-        path: "/new/review",
-        description: "Please review the information you have provided before submitting.",
-        component: <ReviewForm />,
-    }
 ]

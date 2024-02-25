@@ -1,4 +1,3 @@
-import React from 'react'
 import TeamInfoForm from '../team-info/team-info-form'
 import ItemsForm from '../items/items-form'
 
@@ -16,6 +15,10 @@ const ReviewForm = () => {
       </div>
     </div>
   )
+}
+
+export const submitRequest = () => {
+  console.log('Submit Review')
 }
 
 export default ReviewForm
