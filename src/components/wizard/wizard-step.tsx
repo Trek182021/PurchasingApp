@@ -15,7 +15,7 @@ const WizardStep = ({ items, goToStep }: WizardStepProps) => {
     const { pathname } = useLocation();
     return (    
         <nav
-            className="grid grid-cols-4"
+            className="grid grid-cols-3"
         >
             {items.map((item, index) => {
                 const isActive = pathname === item.path;
