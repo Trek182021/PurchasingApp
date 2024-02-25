@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { requestSteps } from '@/constants'
+import { requestSteps } from '@/constants/wizard/requestSteps'
 import { stepsType } from '@/lib/types';
 import { Loader } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
@@ -8,10 +8,9 @@ import WizardStep from './wizard-step';
 
 interface WizardProps {
   _steps: stepsType[];
-  _formWidth?: string;
 }
 
-const Wizard = ({ _steps, _formWidth }: WizardProps) => {
+const Wizard = ({ _steps }: WizardProps) => {
   const navigate = useNavigate();
     const [counter, setCounter] = useState(0);
     const [steps, setSteps] = useState<stepsType[]>();
@@ -20,7 +19,6 @@ const Wizard = ({ _steps, _formWidth }: WizardProps) => {
     function goToStep(step: number) {
         setCounter(step);
         navigate(steps![counter].path);
-
     }
 
     function goToNextStep() {

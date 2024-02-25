@@ -162,4 +162,8 @@ const TeamInfoForm = ({ isStatic = false}: { isStatic?: boolean }) => {
   )
 }
 
+export const submitTeamInfo = () => {
+  console.log("Submit Team Info")
+}
+
 export default TeamInfoForm
