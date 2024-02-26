@@ -1,5 +1,5 @@
-import { DataTable } from "@/components/data-table/items-table"
-import { columns } from "@/constants/data-table/columns/items-columns"
+import { DataTable } from "@/components/data-table/items/items-table"
+import { columns } from "@/constants/data-table/items-columns"
 import { sampleItems1 } from "@/constants/fake-data/request-item"
 
 const ItemsForm = ({ isStatic = false }: { isStatic?: boolean }) => {

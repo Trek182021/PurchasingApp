@@ -6,6 +6,11 @@ export type stepsType = {
     onSubmit?: (result: any) => void;
 }
 
+export type settingsSideLinks = {
+    title: string;
+    path: string;
+}
+
 export type Item = {
     id: string
     item_description: string;

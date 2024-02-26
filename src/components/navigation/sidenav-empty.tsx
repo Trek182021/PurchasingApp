@@ -22,7 +22,7 @@ const SideNavEmpty = () => {
           onClick={() => {}}
         >
           <img
-            src="assets/icons/logout.svg"
+            src="/assets/icons/logout.svg"
             alt="logout"
           />
           <p className="small-medium lg:base-medium">Logout</p>
