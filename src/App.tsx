@@ -6,6 +6,8 @@ import DashboardPage from './pages/dashboard/Page'
 import RequestsPage from './pages/all-requests/Page'
 import SettingsPage from './pages/settings/Page'
 import NotFoundPage from './pages/not-found/Page'
+import ProfileSettingsPage from './pages/settings/profile/Page'
+import NotificationsSettingsPage from './pages/settings/notifications/Page'
 
 const App = () => {
   return (
@@ -23,7 +25,10 @@ const App = () => {
                 <Route path="/new" element={<NewRequestPage />} />
                 <Route path="/new/:step" element={<NewRequestPage />} />
                 <Route path="/requests" element={<RequestsPage />} />
-                <Route path="/settings" element={<SettingsPage />} />
+                <Route path="/settings" element={<SettingsPage />}>
+                    <Route path="/settings/" element={<ProfileSettingsPage />} />
+                    <Route path="/settings/notifications" element={<NotificationsSettingsPage />} />
+                </Route>
             </Route>
             <Route path="*" element={<NotFoundPage/>} />
         </Routes>
