@@ -8,6 +8,9 @@ import SettingsPage from './pages/settings/Page'
 import NotFoundPage from './pages/not-found/Page'
 import ProfileSettingsPage from './pages/settings/profile/Page'
 import NotificationsSettingsPage from './pages/settings/notifications/Page'
+import PublicLayout from './pages/PublicLayout'
+import SignUpPage from './pages/public/sign-up'
+import SignInPage from './pages/public/sign-in'
 
 const App = () => {
   return (
@@ -15,9 +18,10 @@ const App = () => {
         
         <Routes>
             {/* public routes */}
-            {/* <Route path="/" element={<Home />} /> */}
-            {/* <Route path="/login" element={<Login />} /> */}
-            {/* <Route path="/register" element={<Register />} /> */}
+            <Route element={<PublicLayout />}>
+              <Route path="/sign-in" element={<SignInPage />} />
+              <Route path="/sign-up" element={<SignUpPage />} />
+            </Route>
 
             {/* private routes */}
             <Route element={<V1Layout />}>
